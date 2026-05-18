@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Events Gallery – Browse our stunning collection of weddings, DJ nights, concerts, corporate galas & decoration portfolios." />
+  <title>Gallery | Lumière Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="gallery_styles.css" />
+</head>
+<body>
+
+<div class="c-dot"></div>
+<div class="c-ring"></div>
+<div id="scroll-prog"></div>
+<canvas id="pc"></canvas>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <div class="nav-c">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-m">LUMIÈRE</span>
+      <span class="logo-s">EVENTS</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="index.html#upcoming">Events</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="index.html#contact" class="nav-cta">Book Now</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-bg">
+    <div class="ph-grid"></div>
+    <div class="ph-orb orb1"></div>
+    <div class="ph-orb orb2"></div>
+    <div class="ph-orb orb3"></div>
+    <div class="ph-overlay"></div>
+  </div>
+  <div class="ph-content">
+    <p class="ph-eyebrow">Portfolio</p>
+    <h1 class="ph-title">Our <br><span>Visual</span><br>Legacy</h1>
+    <p class="ph-sub">Every frame tells a story of obsessive craft, cinematic vision and moments that live forever in memory. Browse our curated event portfolio.</p>
+    <div class="ph-meta">
+      <div class="ph-stat"><strong>2,400<span style="color:var(--gold);font-size:1.2rem">+</span></strong><span>Events Captured</span></div>
+      <div class="ph-divider"></div>
+      <div class="ph-stat"><strong>18<span style="color:var(--gold);font-size:1.2rem">+</span></strong><span>Event Categories</span></div>
+      <div class="ph-divider"></div>
+      <div class="ph-stat"><strong>98<span style="color:var(--gold);font-size:1.2rem">%</span></strong><span>Client Satisfaction</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-section" id="filterBar">
+  <div class="filter-inner">
+    <button class="filter-tab active" data-filter="all"><i class="fas fa-border-all"></i> All Work <span class="filter-count">72</span></button>
+    <button class="filter-tab" data-filter="wedding"><i class="fas fa-rings-wedding"></i> Weddings <span class="filter-count">24</span></button>
+    <button class="filter-tab" data-filter="dj"><i class="fas fa-music"></i> DJ Nights <span class="filter-count">12</span></button>
+    <button class="filter-tab" data-filter="corporate"><i class="fas fa-briefcase"></i> Corporate <span class="filter-count">10</span></button>
+    <button class="filter-tab" data-filter="concert"><i class="fas fa-microphone-lines"></i> Concerts <span class="filter-count">8</span></button>
+    <button class="filter-tab" data-filter="birthday"><i class="fas fa-cake-candles"></i> Birthdays <span class="filter-count">9</span></button>
+    <button class="filter-tab" data-filter="decor"><i class="fas fa-wand-magic-sparkles"></i> Décor <span class="filter-count">9</span></button>
+    <div class="filter-right">
+      <button class="view-btn active" id="viewMasonry" title="Masonry"><i class="fas fa-grip-vertical"></i></button>
+      <button class="view-btn" id="viewGrid" title="Grid"><i class="fas fa-th-large"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED STRIP -->
+
+
+<!-- MASONRY GALLERY -->
+<section class="gallery-section">
+  <div class="gallery-masonry" id="galleryGrid">
+
+    <div class="g-item" data-cat="wedding" data-title="Candlelit Mehendi Night" data-desc="A spectacular candlelit mehendi ceremony for 400 guests with 10,000 candles and floral rangoli.">
+      <div class="g-inner gc3"><div class="g-deco"><i class="fas fa-fire"></i><span>Mehendi</span></div><div class="g-overlay"><p class="g-cat">Wedding</p><h4 class="g-title">Candlelit Mehendi Night</h4><p class="g-desc">400 Guests · 10,000 Candles</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="dj" data-title="Ultraviolet Underground" data-desc="An immersive UV-lit underground rave with projection mapping and a 12-hour DJ marathon.">
+      <div class="g-inner gc6"><div class="g-deco"><i class="fas fa-compact-disc"></i><span>DJ Night</span></div><div class="g-overlay"><p class="g-cat">DJ Night</p><h4 class="g-title">Ultraviolet Underground</h4><p class="g-desc">2,500 Guests · 12-Hour Set</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="birthday" data-title="Golden Birthday Gala" data-desc="An opulent 50th birthday gala for 300 guests with live jazz, champagne towers and fireworks.">
+      <div class="g-inner gc5"><div class="g-deco"><i class="fas fa-champagne-glasses"></i><span>Birthday</span></div><div class="g-overlay"><p class="g-cat">Birthday</p><h4 class="g-title">Golden Birthday Gala</h4><p class="g-desc">300 Guests · Live Jazz</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="decor" data-title="LED Canopy Wonderland" data-desc="A 10,000 sq ft LED canopy installation with 500,000 micro-lights creating a starfield effect.">
+      <div class="g-inner gc10"><div class="g-deco"><i class="fas fa-star"></i><span>Décor</span></div><div class="g-overlay"><p class="g-cat">Décor</p><h4 class="g-title">LED Canopy Wonderland</h4><p class="g-desc">10,000 sq ft · 500K LED Lights</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="corporate" data-title="Apex Awards Night" data-desc="India's premier corporate awards ceremony with a 1,200-guest black-tie dinner and live broadcast.">
+      <div class="g-inner gc9"><div class="g-deco"><i class="fas fa-trophy"></i><span>Corporate</span></div><div class="g-overlay"><p class="g-cat">Corporate</p><h4 class="g-title">Apex Awards Night</h4><p class="g-desc">1,200 Guests · Live Broadcast</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="wedding" data-title="Destination Beach Wedding" data-desc="A barefoot luxury destination wedding at Goa's private shoreline with 150 intimate guests.">
+      <div class="g-inner gc7"><div class="g-deco"><i class="fas fa-umbrella-beach"></i><span>Wedding</span></div><div class="g-overlay"><p class="g-cat">Destination Wedding</p><h4 class="g-title">Goa Beach Wedding</h4><p class="g-desc">150 Guests · Private Shoreline</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="concert" data-title="Arena Rock Night" data-desc="Stadium-scale concert production for 20,000 fans with pyrotechnics, aerial rigging and broadcast crew.">
+      <div class="g-inner gc2"><div class="g-deco"><i class="fas fa-guitar"></i><span>Concert</span></div><div class="g-overlay"><p class="g-cat">Concert</p><h4 class="g-title">Arena Rock Night</h4><p class="g-desc">20,000 Fans · Pyrotechnics</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="birthday" data-title="Princess Fairytale Party" data-desc="An enchanted woodland-themed 7th birthday with live characters, a fairy forest and magical light show.">
+      <div class="g-inner gc11"><div class="g-deco"><i class="fas fa-wand-sparkles"></i><span>Birthday</span></div><div class="g-overlay"><p class="g-cat">Birthday</p><h4 class="g-title">Princess Fairytale Party</h4><p class="g-desc">Enchanted Woodland Theme</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="wedding" data-title="Haveli Sangeet Night" data-desc="A Rajasthani-themed sangeet in an 18th-century haveli with folk performers and a 600-guest celebration.">
+      <div class="g-inner gc13"><div class="g-deco"><i class="fas fa-music"></i><span>Sangeet</span></div><div class="g-overlay"><p class="g-cat">Wedding</p><h4 class="g-title">Haveli Sangeet Night</h4><p class="g-desc">600 Guests · Rajasthani Theme</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="corporate" data-title="Product Launch Spectacle" data-desc="A cinematic product launch event with 3D mapping, fog machines and a celebrity-hosted reveal for 800 media invitees.">
+      <div class="g-inner gc14"><div class="g-deco"><i class="fas fa-rocket"></i><span>Launch</span></div><div class="g-overlay"><p class="g-cat">Corporate</p><h4 class="g-title">Product Launch Spectacle</h4><p class="g-desc">800 Media · 3D Mapping</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="decor" data-title="Rose Arch Cathedral" data-desc="A 40-foot cathedral-style rose arch installation with 30,000 imported roses and trailing wisteria.">
+      <div class="g-inner gc15"><div class="g-deco"><i class="fas fa-archway"></i><span>Décor</span></div><div class="g-overlay"><p class="g-cat">Décor</p><h4 class="g-title">Rose Arch Cathedral</h4><p class="g-desc">30,000 Roses · 40-Foot Arch</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="dj" data-title="Rooftop Sunset Sessions" data-desc="An exclusive rooftop DJ session at sunset with 360-degree city views and a 500-guest curated crowd.">
+      <div class="g-inner gc16"><div class="g-deco"><i class="fas fa-sun"></i><span>DJ Night</span></div><div class="g-overlay"><p class="g-cat">DJ Night</p><h4 class="g-title">Rooftop Sunset Sessions</h4><p class="g-desc">500 Guests · 360° City Views</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="wedding" data-title="Ring Ceremony Elegance" data-desc="An intimate 200-guest ring ceremony with a custom floral stage, live strings and champagne reception.">
+      <div class="g-inner gc8"><div class="g-deco"><i class="fas fa-ring"></i><span>Ring Ceremony</span></div><div class="g-overlay"><p class="g-cat">Wedding</p><h4 class="g-title">Ring Ceremony Elegance</h4><p class="g-desc">200 Guests · Live Strings</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="concert" data-title="Classical Night Under Stars" data-desc="An open-air classical music night with a 120-piece orchestra beneath a custom starfield canopy.">
+      <div class="g-inner gc12"><div class="g-deco"><i class="fas fa-violin"></i><span>Concert</span></div><div class="g-overlay"><p class="g-cat">Concert</p><h4 class="g-title">Classical Night Under Stars</h4><p class="g-desc">120-Piece Orchestra · Open Air</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="birthday" data-title="Neon Sweet 16" data-desc="A vibrant neon-themed 16th birthday with laser tag, glow décor, DJ and a custom neon-lit cake wall.">
+      <div class="g-inner gc17"><div class="g-deco"><i class="fas fa-bolt"></i><span>Birthday</span></div><div class="g-overlay"><p class="g-cat">Birthday</p><h4 class="g-title">Neon Sweet 16</h4><p class="g-desc">Neon Theme · Laser Tag · DJ</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+    <div class="g-item" data-cat="decor" data-title="Fabric Draping Masterpiece" data-desc="Hand-stitched silk fabric draping across a 200-foot venue ceiling creating an opulent cloud effect.">
+      <div class="g-inner gc18"><div class="g-deco"><i class="fas fa-scroll"></i><span>Décor</span></div><div class="g-overlay"><p class="g-cat">Décor</p><h4 class="g-title">Fabric Draping Masterpiece</h4><p class="g-desc">200ft Ceiling · Hand-Stitched Silk</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="load-more-wrap">
+  <button class="btn-load" id="loadMore"><span>Load More</span> <i class="fas fa-arrow-down"></i></button>
+</div>
+
+<!-- VIDEO REEL SECTION -->
+<div class="video-section">
+  <p class="vs-label">Event Reels</p>
+  <div class="vs-grid">
+    <div class="vs-item">
+      <div class="vs-inner gc1">
+        <div class="vs-play"><button class="vs-play-btn"><i class="fas fa-play"></i></button></div>
+        <div class="g-overlay" style="opacity:1;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 50%)"></div>
+        <div class="vs-label-card"><p>Wedding</p><h4>Royal Palace Reel 2024</h4></div>
+      </div>
+    </div>
+    <div class="vs-item">
+      <div class="vs-inner gc6">
+        <div class="vs-play"><button class="vs-play-btn"><i class="fas fa-play"></i></button></div>
+        <div class="g-overlay" style="opacity:1;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 50%)"></div>
+        <div class="vs-label-card"><p>DJ Night</p><h4>Neon Circus Highlight Reel</h4></div>
+      </div>
+    </div>
+    <div class="vs-item">
+      <div class="vs-inner gc9">
+        <div class="vs-play"><button class="vs-play-btn"><i class="fas fa-play"></i></button></div>
+        <div class="g-overlay" style="opacity:1;background:linear-gradient(to top,rgba(0,0,0,.75) 0%,transparent 50%)"></div>
+        <div class="vs-label-card"><p>Corporate</p><h4>Apex Awards 2024 Showreel</h4></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS ROW -->
+<div class="stats-row">
+  <div class="stats-inner">
+    <div class="stat"><div><span class="stat-n" data-target="2400">0</span><span class="stat-suf">+</span></div><p class="stat-l">Events Photographed</p></div>
+    <div class="stat"><div><span class="stat-n" data-target="15">0</span><span class="stat-suf">K+</span></div><p class="stat-l">Hours of Event Coverage</p></div>
+    <div class="stat"><div><span class="stat-n" data-target="50">0</span><span class="stat-suf">+</span></div><p class="stat-l">Award-Winning Events</p></div>
+    <div class="stat"><div><span class="stat-n" data-target="12">0</span><span class="stat-suf">+</span></div><p class="stat-l">Cities Covered</p></div>
+    <div class="stat"><div><span class="stat-n" data-target="98">0</span><span class="stat-suf">%</span></div><p class="stat-l">Client Return Rate</p></div>
+  </div>
+</div>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-text">
+      <h2>Ready to Create Your <em>Masterpiece?</em></h2>
+      <p>Let's design something so extraordinary that every photograph tells a story worth framing forever.</p>
+    </div>
+    <div class="cta-btns">
+      <a href="index.html#contact" class="btn btn-gold">Book Your Event <i class="fas fa-arrow-right"></i></a>
+      <a href="services.html" class="btn btn-outline">View Services</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-c">
+    <div class="footer-logo-sm">LUMIÈRE EVENTS</div>
+    <p>© 2025 Lumière Events. All Rights Reserved.</p>
+    <div class="social-sm">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button class="btt" id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-bg" id="lbBg"></div>
+  <div class="lb-box">
+    <button class="lb-nav lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lb-nav lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+    <div class="lb-visual">
+      <div class="lb-visual-inner" id="lbVisual"></div>
+    </div>
+    <div class="lb-footer">
+      <div class="lb-info">
+        <p class="lb-cat" id="lbCat"></p>
+        <h3 class="lb-title" id="lbTitle"></h3>
+        <p class="lb-desc" id="lbDesc"></p>
+      </div>
+      <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* === CURSOR === */
+const dot = document.querySelector('.c-dot'), ring = document.querySelector('.c-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+document.querySelectorAll('a,button,.g-item,.vs-item').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('hov'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('hov'));
+});
+
+/* === PARTICLES === */
+const canvas=document.getElementById('pc'),ctx=canvas.getContext('2d');
+function resize(){canvas.width=innerWidth;canvas.height=innerHeight;}resize();addEventListener('resize',resize);
+const pts=Array.from({length:70},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:Math.random()*1.6+.3,a:Math.random()*.45+.1}));
+const pal=['rgba(201,168,76,','rgba(123,47,247,','rgba(232,108,44,'];
+pts.forEach(p=>{p.c=pal[Math.floor(Math.random()*pal.length)]+p.a+')';});
+(function draw(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let i=0;i<pts.length;i++){for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<110){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle=`rgba(201,168,76,${.04*(1-d/110)})`;ctx.lineWidth=.5;ctx.stroke();}}}
+  pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>canvas.width)p.vx*=-1;if(p.y<0||p.y>canvas.height)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=p.c;ctx.fill();});
+  requestAnimationFrame(draw);
+})();
+
+/* === SCROLL PROGRESS === */
+const prog=document.getElementById('scroll-prog');
+addEventListener('scroll',()=>{const s=scrollY,h=document.documentElement.scrollHeight-innerHeight;prog.style.width=(h>0?s/h*100:0)+'%';},{passive:true});
+
+/* === NAVBAR === */
+const nav=document.getElementById('nav'),hamburger=document.getElementById('hamburger'),navLinks=document.getElementById('navLinks');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>60),{passive:true});
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');navLinks.classList.toggle('open');});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');navLinks.classList.remove('open');}));
+
+/* === BACK TO TOP === */
+const btt=document.getElementById('btt');
+addEventListener('scroll',()=>btt.classList.toggle('show',scrollY>500),{passive:true});
+btt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+
+/* === FILTER TABS === */
+const filterTabs=document.querySelectorAll('.filter-tab');
+const items=document.querySelectorAll('#galleryGrid .g-item');
+filterTabs.forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    filterTabs.forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    const f=tab.dataset.filter;
+    items.forEach(item=>{
+      const show=f==='all'||item.dataset.cat===f;
+      item.style.transition='opacity .35s ease,transform .35s ease';
+      if(show){item.style.opacity='1';item.style.transform='scale(1)';item.style.display='';}
+      else{item.style.opacity='0';item.style.transform='scale(.9)';setTimeout(()=>{if(!show)item.style.display='none';},350);}
+    });
+  });
+});
+
+/* === VIEW TOGGLE === */
+const grid=document.getElementById('galleryGrid');
+document.getElementById('viewMasonry').addEventListener('click',function(){
+  this.classList.add('active');document.getElementById('viewGrid').classList.remove('active');
+  grid.style.columns='4';grid.style.display='';grid.style.gridTemplateColumns='';
+});
+document.getElementById('viewGrid').addEventListener('click',function(){
+  this.classList.add('active');document.getElementById('viewMasonry').classList.remove('active');
+  grid.style.columns='unset';grid.style.display='grid';grid.style.gridTemplateColumns='repeat(4,1fr)';
+  grid.querySelectorAll('.g-inner').forEach(i=>i.style.aspectRatio='1/1');
+});
+
+/* === LIGHTBOX === */
+const lb=document.getElementById('lightbox'),lbVisual=document.getElementById('lbVisual');
+const lbCat=document.getElementById('lbCat'),lbTitle=document.getElementById('lbTitle'),lbDesc=document.getElementById('lbDesc');
+let allItems=[...document.querySelectorAll('.g-item')],lbIdx=0;
+
+function openLb(item,idx){
+  lbIdx=idx;
+  const inner=item.querySelector('.g-inner');
+  lbVisual.style.background=getComputedStyle(inner).background;
+  lbVisual.style.backgroundSize='cover';
+  const deco=item.querySelector('.g-deco i');
+  lbVisual.innerHTML=`<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;opacity:.15"><i class="${deco?deco.className:'fas fa-image'}" style="font-size:5rem;color:#fff"></i></div>`;
+  lbCat.textContent=item.dataset.cat||'';
+  lbTitle.textContent=item.dataset.title||'';
+  lbDesc.textContent=item.dataset.desc||'';
+  lb.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLb(){lb.classList.remove('open');document.body.style.overflow='';}
+function navigate(dir){
+  const visible=allItems.filter(i=>i.style.display!=='none');
+  let idx=visible.findIndex((_,i)=>i===lbIdx);
+  idx=(idx+dir+visible.length)%visible.length;
+  lbIdx=idx;openLb(visible[idx],idx);
+}
+
+allItems.forEach((item,i)=>{
+  item.addEventListener('click',()=>{
+    const visible=allItems.filter(x=>x.style.display!=='none');
+    const vIdx=visible.indexOf(item);
+    openLb(item,vIdx>=0?vIdx:i);
+  });
+});
+document.getElementById('lbClose').addEventListener('click',closeLb);
+document.getElementById('lbBg').addEventListener('click',closeLb);
+document.getElementById('lbPrev').addEventListener('click',()=>navigate(-1));
+document.getElementById('lbNext').addEventListener('click',()=>navigate(1));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')navigate(-1);if(e.key==='ArrowRight')navigate(1);});
+
+/* === LOAD MORE (simulate) === */
+const loadMoreBtn=document.getElementById('loadMore');
+let loaded=0;
+const extraItems=[
+  {cat:'wedding',cls:'gc3',icon:'fas fa-heart',title:'Garden Wedding Ceremony',desc:'An enchanted garden ceremony with 250 guests under a living flower canopy.'},
+  {cat:'dj',cls:'gc10',icon:'fas fa-record-vinyl',title:'Vinyl & Velvet Night',desc:'A retro-chic vinyl DJ night in an 800-capacity converted warehouse.'},
+  {cat:'corporate',cls:'gc14',icon:'fas fa-handshake',title:'Global Partnership Summit',desc:'International B2B summit with delegates from 40 countries.'},
+  {cat:'birthday',cls:'gc17',icon:'fas fa-balloon',title:'Vintage Garden Party',desc:'A 40th birthday garden party with vintage botanical décor and afternoon tea.'},
+  {cat:'decor',cls:'gc4',icon:'fas fa-leaf',title:'Botanical Installation',desc:'A living wall installation of 200+ exotic plants spanning an entire ballroom.'},
+  {cat:'concert',cls:'gc2',icon:'fas fa-headphones',title:'Electronic Sundown',desc:'Beachside electronic music festival at sunset for 8,000 attendees.'},
+  {cat:'wedding',cls:'gc7',icon:'fas fa-dove',title:'Courtyard Nikkah',desc:'An intimate Islamic wedding ceremony in a historic Mughal courtyard.'},
+  {cat:'decor',cls:'gc18',icon:'fas fa-candle-holder',title:'Candlelight Ceiling',desc:'3,000 hand-placed pillar candles suspended from a ballroom ceiling grid.'},
+];
+
+loadMoreBtn.addEventListener('click',function(){
+  if(loaded>=extraItems.length){this.innerHTML='<span>All Loaded</span> <i class="fas fa-check"></i>';this.disabled=true;return;}
+  const batch=extraItems.slice(loaded,loaded+4);
+  batch.forEach(d=>{
+    const el=document.createElement('div');
+    el.className='g-item';el.dataset.cat=d.cat;el.dataset.title=d.title;el.dataset.desc=d.desc;
+    el.style.opacity='0';el.style.transform='scale(.9)';
+    el.innerHTML=`<div class="g-inner ${d.cls}"><div class="g-deco"><i class="${d.icon}"></i><span>${d.cat}</span></div><div class="g-overlay"><p class="g-cat">${d.cat}</p><h4 class="g-title">${d.title}</h4><p class="g-desc">${d.desc}</p></div><button class="g-action"><i class="fas fa-expand-alt"></i></button></div>`;
+    grid.appendChild(el);
+    el.addEventListener('click',()=>openLb(el,allItems.indexOf(el)));
+    setTimeout(()=>{el.style.transition='opacity .4s ease,transform .4s ease';el.style.opacity='1';el.style.transform='scale(1)';},50);
+  });
+  loaded+=4;
+  allItems=[...document.querySelectorAll('.g-item')];
+  if(loaded>=extraItems.length)this.innerHTML='<span>All Loaded</span> <i class="fas fa-check"></i>';
+});
+
+/* === SCROLL REVEAL === */
+const srObs=new IntersectionObserver(ents=>{ents.forEach(e=>{if(e.isIntersecting){const siblings=[...e.target.parentElement.children];const idx=siblings.indexOf(e.target);setTimeout(()=>e.target.classList.add('vis'),idx*60);srObs.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.g-item,.vs-item,.stat').forEach(el=>{el.classList.add('sr');srObs.observe(el);});
+
+/* === STATS COUNTER === */
+const counterObs=new IntersectionObserver(ents=>{ents.forEach(e=>{if(e.isIntersecting){const t=+e.target.dataset.target,s=performance.now();(function up(now){const p=Math.min((now-s)/2000,1),ease=1-Math.pow(1-p,3);e.target.textContent=Math.floor(ease*t).toLocaleString();if(p<1)requestAnimationFrame(up);else e.target.textContent=t.toLocaleString();})( performance.now());counterObs.unobserve(e.target);}});},{threshold:.5});
+document.querySelectorAll('.stat-n').forEach(el=>counterObs.observe(el));
+
+/* === SMOOTH LINKS === */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();scrollTo({top:t.offsetTop-80,behavior:'smooth'});}});});
+</script>
+<script src="script.js"></script>
+</body>
+</html>

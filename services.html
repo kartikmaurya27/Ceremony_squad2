@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Events Services – Luxury wedding planning, DJ nights, concert management, corporate events, birthday celebrations & bespoke decoration." />
+  <title>Services | Lumière Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="services_styles.css" />
+</head>
+<body>
+
+<div class="c-dot"></div>
+<div class="c-ring"></div>
+<div id="sp"></div>
+<canvas id="pc"></canvas>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <div class="nav-c">
+    <a href="index.html" class="nl"><span class="nl-m">LUMIÈRE</span><span class="nl-s">EVENTS</span></a>
+    <ul class="nlinks" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#upcoming">Events</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="index.html#contact" class="ncta">Book Now</a>
+    <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="ph">
+  <div class="ph-bg">
+    <div class="ph-lines"></div>
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+    <div class="ph-ov"></div>
+  </div>
+  <div class="ph-content">
+    <p class="eye">What We Create</p>
+    <h1 class="ph-title">Our<br><em>Services</em></h1>
+    <p class="ph-sub">Six signature service pillars — each one engineered to deliver an experience that surpasses imagination. From intimate ceremonies to stadium concerts, we orchestrate every detail.</p>
+    <div class="ph-ctas">
+      <a href="index.html#contact" class="btn btn-g">Start Planning <i class="fas fa-arrow-right"></i></a>
+      <a href="gallery.html" class="btn btn-o">View Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh">
+      <span class="sh-eye">Our Expertise</span>
+      <h2 class="sh-title">Six Pillars of <em>Excellence</em></h2>
+      <p class="sh-sub">Every service is led by a dedicated specialist team with deep category expertise, vendor relationships and creative vision.</p>
+    </div>
+
+    <!-- Filter pills -->
+    <div class="svc-nav">
+      <button class="svc-pill active" data-filter="all"><i class="fas fa-border-all"></i> All Services</button>
+      <button class="svc-pill" data-filter="wedding"><i class="fas fa-rings-wedding"></i> Weddings</button>
+      <button class="svc-pill" data-filter="dj"><i class="fas fa-music"></i> DJ Nights</button>
+      <button class="svc-pill" data-filter="birthday"><i class="fas fa-cake-candles"></i> Birthdays</button>
+      <button class="svc-pill" data-filter="corporate"><i class="fas fa-briefcase"></i> Corporate</button>
+      <button class="svc-pill" data-filter="concert"><i class="fas fa-microphone-lines"></i> Concerts</button>
+      <button class="svc-pill" data-filter="decor"><i class="fas fa-wand-magic-sparkles"></i> Décor</button>
+    </div>
+
+    <div class="svc-grid" id="svcGrid">
+
+      <!-- WEDDING — FEATURED -->
+      <div class="svc-card featured acc-gold sr" data-svc="wedding">
+        <div class="sc-vis">
+          <div class="sc-vis-inner bg-w">
+            <div class="vis-deco"><i class="fas fa-rings-wedding"></i><span>Weddings</span></div>
+            <div class="vis-num">01</div>
+          </div>
+        </div>
+        <div class="sc-body sc-featured">
+          <div class="sc-head"><div class="sc-icon icon-gold"><i class="fas fa-rings-wedding"></i></div><span class="sc-badge badge-gold">Signature</span></div>
+          <h3 class="sc-title">Wedding Planning</h3>
+          <p class="sc-desc">From the first consultation to the final farewell, we orchestrate every element of your wedding with obsessive precision. Our wedding team has crafted over 800 ceremonies spanning Hindu, Muslim, Sikh, Christian and destination formats — each one a cinematic masterpiece tailored entirely to you.</p>
+          <ul class="sc-features">
+            <li class="sc-feat"><i class="fas fa-check icon-gold"></i> Full wedding management from engagement to reception</li>
+            <li class="sc-feat"><i class="fas fa-check icon-gold"></i> Venue scouting & vendor curation across India</li>
+            <li class="sc-feat"><i class="fas fa-check icon-gold"></i> Bespoke theme design & art direction</li>
+            <li class="sc-feat"><i class="fas fa-check icon-gold"></i> Guest management, RSVP & seating logistics</li>
+            <li class="sc-feat"><i class="fas fa-check icon-gold"></i> Live entertainment & artist booking</li>
+            <li class="sc-feat"><i class="fas fa-check icon-gold"></i> Day-of coordination with a 10+ member onsite team</li>
+          </ul>
+          <a href="index.html#contact" class="sc-link link-gold">Plan Your Wedding <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="sc-glow glow-g"></div>
+      </div>
+
+      <!-- DJ NIGHTS -->
+      <div class="svc-card acc-purple sr" data-svc="dj">
+        <div class="sc-vis">
+          <div class="sc-vis-inner bg-dj">
+            <div class="vis-deco"><i class="fas fa-music"></i><span>DJ Nights</span></div>
+            <div class="vis-num">02</div>
+          </div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-head"><div class="sc-icon icon-purple"><i class="fas fa-music"></i></div><span class="sc-badge badge-purple">Premium</span></div>
+          <h3 class="sc-title">DJ Nights & Nightlife Events</h3>
+          <p class="sc-desc">From intimate rooftop sessions to stadium-scale raves, we design electrifying nightlife experiences. Our sound engineers, lighting designers and DJ roster are the finest in the country — delivering audio-visual productions that push every boundary.</p>
+          <ul class="sc-features">
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> L-Acoustics & Meyer Sound concert systems</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Headline DJ booking & artist hospitality</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> LED wall, laser & intelligent lighting rigs</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Crowd flow design & safety management</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Ticketing platform & marketing support</li>
+          </ul>
+          <a href="index.html#contact" class="sc-link link-purple">Book a DJ Night <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="sc-glow glow-p"></div>
+      </div>
+
+      <!-- BIRTHDAYS -->
+      <div class="svc-card acc-orange sr" data-svc="birthday">
+        <div class="sc-vis">
+          <div class="sc-vis-inner bg-b">
+            <div class="vis-deco"><i class="fas fa-cake-candles"></i><span>Birthdays</span></div>
+            <div class="vis-num">03</div>
+          </div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-head"><div class="sc-icon icon-orange"><i class="fas fa-cake-candles"></i></div><span class="sc-badge badge-orange">Bespoke</span></div>
+          <h3 class="sc-title">Birthday Events</h3>
+          <p class="sc-desc">Whether it's a first birthday bash or a landmark 50th gala, every birthday deserves to be remembered forever. We create fully immersive themed environments with custom props, activation stations, live entertainment and show-stopping surprise moments.</p>
+          <ul class="sc-features">
+            <li class="sc-feat"><i class="fas fa-check icon-orange"></i> Themed décor & immersive environments</li>
+            <li class="sc-feat"><i class="fas fa-check icon-orange"></i> Custom cakes, dessert walls & candy stations</li>
+            <li class="sc-feat"><i class="fas fa-check icon-orange"></i> Live performers, magicians & entertainers</li>
+            <li class="sc-feat"><i class="fas fa-check icon-orange"></i> Photo booths & memory stations</li>
+            <li class="sc-feat"><i class="fas fa-check icon-orange"></i> Surprise flash mob & firework reveals</li>
+          </ul>
+          <a href="index.html#contact" class="sc-link link-orange">Plan a Birthday <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="sc-glow glow-o"></div>
+      </div>
+
+      <!-- CORPORATE -->
+      <div class="svc-card acc-teal sr" data-svc="corporate">
+        <div class="sc-vis">
+          <div class="sc-vis-inner bg-corp">
+            <div class="vis-deco"><i class="fas fa-briefcase"></i><span>Corporate</span></div>
+            <div class="vis-num">04</div>
+          </div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-head"><div class="sc-icon icon-teal"><i class="fas fa-briefcase"></i></div><span class="sc-badge badge-teal">Enterprise</span></div>
+          <h3 class="sc-title">Corporate Events</h3>
+          <p class="sc-desc">Conferences, product launches, award ceremonies, team retreats and global summits — we bring boardroom precision to every corporate engagement. Our corporate division handles Fortune 500 clients with seamless logistics, flawless branding and immersive production.</p>
+          <ul class="sc-features">
+            <li class="sc-feat"><i class="fas fa-check icon-teal"></i> Conferences & leadership summits</li>
+            <li class="sc-feat"><i class="fas fa-check icon-teal"></i> Product launches & brand activations</li>
+            <li class="sc-feat"><i class="fas fa-check icon-teal"></i> Award ceremonies & annual galas</li>
+            <li class="sc-feat"><i class="fas fa-check icon-teal"></i> Team building retreats & offsites</li>
+            <li class="sc-feat"><i class="fas fa-check icon-teal"></i> Live broadcast & streaming integration</li>
+          </ul>
+          <a href="index.html#contact" class="sc-link link-teal">Plan a Corporate Event <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="sc-glow glow-t"></div>
+      </div>
+
+      <!-- CONCERTS — FEATURED -->
+      <div class="svc-card featured acc-purple sr" data-svc="concert">
+        <div class="sc-vis">
+          <div class="sc-vis-inner bg-c">
+            <div class="vis-deco"><i class="fas fa-microphone-lines"></i><span>Concerts</span></div>
+            <div class="vis-num">05</div>
+          </div>
+        </div>
+        <div class="sc-body sc-featured">
+          <div class="sc-head"><div class="sc-icon icon-purple"><i class="fas fa-microphone-lines"></i></div><span class="sc-badge badge-purple">Large Scale</span></div>
+          <h3 class="sc-title">Concert Management</h3>
+          <p class="sc-desc">We've produced everything from 500-seat intimate concerts to 25,000-capacity outdoor festivals. Our concert division is India's most trusted full-service production company — handling stage design, structural engineering, artist logistics, ticketing, security, crowd management and live broadcast from a single command centre.</p>
+          <ul class="sc-features">
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Stage design, rigging & structural engineering</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Artist contract, hospitality & rider management</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Full FOH & monitor engineering team</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Pyrotechnics, confetti & special FX</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Crowd safety & medical emergency planning</li>
+            <li class="sc-feat"><i class="fas fa-check icon-purple"></i> Live TV broadcast & multi-camera direction</li>
+          </ul>
+          <a href="index.html#contact" class="sc-link link-purple">Plan a Concert <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="sc-glow glow-p"></div>
+      </div>
+
+      <!-- DECORATION -->
+      <div class="svc-card acc-rose sr" data-svc="decor">
+        <div class="sc-vis">
+          <div class="sc-vis-inner bg-dec">
+            <div class="vis-deco"><i class="fas fa-wand-magic-sparkles"></i><span>Décor</span></div>
+            <div class="vis-num">06</div>
+          </div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-head"><div class="sc-icon icon-rose"><i class="fas fa-wand-magic-sparkles"></i></div><span class="sc-badge badge-rose">Popular</span></div>
+          <h3 class="sc-title">Decoration Services</h3>
+          <p class="sc-desc">Our décor atelier creates environments that steal every photograph. From hand-tied floral installations and LED canopy systems to custom fabric draping and bespoke centrepieces — every element is designed, sourced and installed by our in-house artisan team.</p>
+          <ul class="sc-features">
+            <li class="sc-feat"><i class="fas fa-check icon-rose"></i> Floral design & large-scale installations</li>
+            <li class="sc-feat"><i class="fas fa-check icon-rose"></i> LED canopy & fairy light systems</li>
+            <li class="sc-feat"><i class="fas fa-check icon-rose"></i> Custom fabric draping & ceiling treatments</li>
+            <li class="sc-feat"><i class="fas fa-check icon-rose"></i> Mandap, stage & backdrop design</li>
+            <li class="sc-feat"><i class="fas fa-check icon-rose"></i> Table centrepieces & linen styling</li>
+          </ul>
+          <a href="index.html#contact" class="sc-link link-rose">Design My Décor <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="sc-glow glow-r"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS SECTION -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="sh" style="text-align:center">
+      <span class="sh-eye">How We Work</span>
+      <h2 class="sh-title">Our <em>5-Step</em> Process</h2>
+      <p class="sh-sub" style="margin:0 auto">From your first message to the final farewell — a seamless, joyful journey.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step sr">
+        <div class="ps-num"><span>01</span></div>
+        <i class="ps-icon fas fa-comments"></i>
+        <h4 class="ps-title">Discovery Call</h4>
+        <p class="ps-desc">We listen deeply to your vision, budget, scale and dream aesthetic to understand exactly what you want.</p>
+      </div>
+      <div class="process-step sr">
+        <div class="ps-num"><span>02</span></div>
+        <i class="ps-icon fas fa-pencil-ruler"></i>
+        <h4 class="ps-title">Concept Design</h4>
+        <p class="ps-desc">Our creative team produces a full mood board, 3D visualisation and detailed event concept for your approval.</p>
+      </div>
+      <div class="process-step sr">
+        <div class="ps-num"><span>03</span></div>
+        <i class="ps-icon fas fa-handshake"></i>
+        <h4 class="ps-title">Vendor Curation</h4>
+        <p class="ps-desc">We source the best vendors from our 120+ partner network — negotiating rates and guaranteeing quality.</p>
+      </div>
+      <div class="process-step sr">
+        <div class="ps-num"><span>04</span></div>
+        <i class="ps-icon fas fa-gears"></i>
+        <h4 class="ps-title">Setup & Rehearsal</h4>
+        <p class="ps-desc">Our team arrives 48 hours early for full venue transformation, technical rehearsal and final quality check.</p>
+      </div>
+      <div class="process-step sr">
+        <div class="ps-num"><span>05</span></div>
+        <i class="ps-icon fas fa-star"></i>
+        <h4 class="ps-title">Event Day Magic</h4>
+        <p class="ps-desc">A dedicated event director oversees every moment, so you experience the day without a single worry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD-ON SERVICES -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh">
+      <span class="sh-eye">Add-Ons</span>
+      <h2 class="sh-title">Enhance Your <em>Experience</em></h2>
+      <p class="sh-sub">Powerful extras that take any event from excellent to unforgettable.</p>
+    </div>
+    <div class="add-grid">
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-camera"></i></div><h4>Photo & Video</h4><p>Cinematic same-day edit, drone coverage, photo booth and full post-production film.</p></div>
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-utensils"></i></div><h4>Catering & Bar</h4><p>Gourmet catering, signature cocktail bars, dessert stations and live cooking counters.</p></div>
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-car"></i></div><h4>Guest Transport</h4><p>Luxury fleet, vintage cars, horse carriages and chartered coaches for all your guests.</p></div>
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-hotel"></i></div><h4>Accommodation</h4><p>Block bookings at luxury hotels with negotiated rates and dedicated concierge service.</p></div>
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-fire-flame-curved"></i></div><h4>Pyrotechnics</h4><p>Indoor cold sparklers, outdoor fireworks, confetti cannons and flame effects.</p></div>
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-drone"></i></div><h4>Drone Show</h4><p>Choreographed drone light shows — a breathtaking sky spectacle above your event.</p></div>
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-spa"></i></div><h4>Wellness & Beauty</h4><p>On-site makeup artists, mehndi performers, hair stylists and wellness lounges.</p></div>
+      <div class="add-card sr"><div class="ac-icon"><i class="fas fa-envelope-open-text"></i></div><h4>Luxury Stationery</h4><p>Custom invitations, RSVP management, menu cards and bespoke keepsake programmes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="wy-visual">
+        <div class="wy-main">
+          <div class="wy-main-inner">
+            <div class="wy-main-deco"><i class="fas fa-award"></i></div>
+          </div>
+        </div>
+        <div class="wy-float wy-f1">
+          <div class="wy-f1-inner">
+            <strong>2,400<span style="color:var(--gold);font-size:1.2rem">+</span></strong>
+            <span>Events Delivered</span>
+          </div>
+        </div>
+        <div class="wy-float wy-f2">
+          <div class="wy-f2-inner">
+            <div class="wy-f2-icon"><i class="fas fa-trophy"></i></div>
+            <div class="wy-f2-text"><strong>Award-Winning</strong><span>Best Event Co. 2023–24</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="wy-text">
+        <span class="sh-eye">Why Choose Us</span>
+        <h2 class="sh-title">The Lumière <em>Difference</em></h2>
+        <p style="font-size:.88rem;color:var(--text-m);line-height:1.8;margin-top:12px">We don't just plan events — we engineer extraordinary human experiences. Every team member is hired for their obsession with detail, their creative instincts and their ability to stay calm under pressure.</p>
+        <div class="wy-points">
+          <div class="wy-pt sr">
+            <div class="wy-pt-icon" style="background:rgba(201,168,76,.1);border-color:rgba(201,168,76,.25);color:var(--gold)"><i class="fas fa-crown"></i></div>
+            <div class="wy-pt-body">
+              <strong>15 Years of Mastery</strong>
+              <p>Over a decade and a half of refining our craft across every event category, city and scale.</p>
+            </div>
+          </div>
+          <div class="wy-pt sr">
+            <div class="wy-pt-icon" style="background:rgba(123,47,247,.1);border-color:rgba(123,47,247,.25);color:var(--purple-l)"><i class="fas fa-people-group"></i></div>
+            <div class="wy-pt-body">
+              <strong>50-Member Expert Team</strong>
+              <p>Designers, sound engineers, floral artists, coordinators and production managers under one roof.</p>
+            </div>
+          </div>
+          <div class="wy-pt sr">
+            <div class="wy-pt-icon" style="background:rgba(232,108,44,.1);border-color:rgba(232,108,44,.25);color:var(--orange-l)"><i class="fas fa-network-wired"></i></div>
+            <div class="wy-pt-body">
+              <strong>120+ Trusted Vendor Partners</strong>
+              <p>Vetted, trained and deeply integrated into our ecosystem for unmatched quality and reliability.</p>
+            </div>
+          </div>
+          <div class="wy-pt sr">
+            <div class="wy-pt-icon" style="background:rgba(30,207,180,.08);border-color:rgba(30,207,180,.2);color:var(--teal)"><i class="fas fa-headset"></i></div>
+            <div class="wy-pt-body">
+              <strong>24/7 Dedicated Concierge</strong>
+              <p>A named event director available around the clock from booking to the final bow.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh" style="text-align:center">
+      <span class="sh-eye">Client Voices</span>
+      <h2 class="sh-title">What They <em>Say</em></h2>
+    </div>
+    <div class="testi-row">
+      <div class="tcard sr">
+        <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="tc-txt">"Lumière planned our entire 3-day wedding across Delhi and Agra. The orchestration was flawless — every vendor, every decoration, every performer was exactly as promised. It was the most beautiful experience of our lives."</p>
+        <div class="tc-auth"><div class="tc-av av-1"></div><div><strong>Priya & Arjun Mehta</strong><span>Wedding · The Leela Palace</span></div></div>
+      </div>
+      <div class="tcard sr">
+        <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="tc-txt">"The Neon Circus event they produced for us had 5,000 people and not a single hiccup. Sound, lights, crowd management, artist hospitality — perfection across the board. They are truly in a league of their own."</p>
+        <div class="tc-auth"><div class="tc-av av-2"></div><div><strong>Rahul Singh</strong><span>DJ Night · Noida</span></div></div>
+      </div>
+      <div class="tcard sr">
+        <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="tc-txt">"Our annual leadership summit was beyond what any of us imagined possible. The branding integration, the stage design, the awards show production — it positioned us as a world-class organisation. Worth every rupee."</p>
+        <div class="tc-auth"><div class="tc-av av-3"></div><div><strong>Neha Kapoor, CEO</strong><span>Corporate Summit · Gurugram</span></div></div>
+      </div>
+      <div class="tcard sr">
+        <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="tc-txt">"My daughter's 18th birthday was an enchanted fairytale — the LED canopy, the floral arch, the cake reveal with fireworks. She cried happy tears. Our family will never forget it. Thank you Lumière!"</p>
+        <div class="tc-auth"><div class="tc-av av-4"></div><div><strong>Sunita Verma</strong><span>Birthday Event · Greater Noida</span></div></div>
+      </div>
+      <div class="tcard sr">
+        <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="tc-txt">"We hired Lumière for our Monsoon Music Festival and they delivered a 15,000-person event without a single complaint. Stage, sound, safety, artists — all world-class. Booking them again for next year immediately."</p>
+        <div class="tc-auth"><div class="tc-av av-5"></div><div><strong>Vikram Nair</strong><span>Concert · Buddh International</span></div></div>
+      </div>
+      <div class="tcard sr">
+        <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p class="tc-txt">"The rose arch and floral ceiling installation for our reception was unlike anything we had seen in India. Guests were photographing everything for hours. The décor team are true artists."</p>
+        <div class="tc-auth"><div class="tc-av av-6"></div><div><strong>Meera & Rohit Patel</strong><span>Wedding Décor · Mumbai</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="sh" style="text-align:center">
+      <span class="sh-eye">Investment</span>
+      <h2 class="sh-title">Clear, <em>Transparent</em> Pricing</h2>
+      <p class="sh-sub" style="margin:0 auto">All packages include a dedicated event director, on-site coordination and post-event debrief. Custom quotes available for large-scale events.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pc sr">
+        <div class="pc-tier">Silver</div>
+        <div class="pc-price"><span class="pc-curr">₹</span><span class="pc-amt">1,20,000</span></div>
+        <p class="pc-desc">Perfect for intimate gatherings up to 100 guests</p>
+        <ul class="pc-feats">
+          <li><i class="fas fa-check"></i> Up to 100 Guests</li>
+          <li><i class="fas fa-check"></i> Basic Décor Package</li>
+          <li><i class="fas fa-check"></i> 1 Event Coordinator</li>
+          <li><i class="fas fa-check"></i> Sound System (4 hrs)</li>
+          <li><i class="fas fa-check"></i> Photography (4 hrs)</li>
+          <li class="dis"><i class="fas fa-times"></i> Live DJ Performance</li>
+          <li class="dis"><i class="fas fa-times"></i> Floral Installations</li>
+          <li class="dis"><i class="fas fa-times"></i> Fireworks & FX</li>
+        </ul>
+        <a href="index.html#contact" class="btn btn-o btn-full">Get Started</a>
+      </div>
+      <div class="pc pc-feat sr">
+        <div class="pc-badge">Most Popular</div>
+        <div class="pc-tier">Gold</div>
+        <div class="pc-price"><span class="pc-curr">₹</span><span class="pc-amt">3,50,000</span></div>
+        <p class="pc-desc">Ideal for weddings & signature celebrations up to 400 guests</p>
+        <ul class="pc-feats">
+          <li><i class="fas fa-check"></i> Up to 400 Guests</li>
+          <li><i class="fas fa-check"></i> Premium Décor Package</li>
+          <li><i class="fas fa-check"></i> 2 Event Coordinators</li>
+          <li><i class="fas fa-check"></i> Pro Sound & Light Rig</li>
+          <li><i class="fas fa-check"></i> Photo + Video (Full Day)</li>
+          <li><i class="fas fa-check"></i> Live DJ (6 hrs)</li>
+          <li><i class="fas fa-check"></i> Floral Installations</li>
+          <li class="dis"><i class="fas fa-times"></i> Fireworks & Drone Show</li>
+        </ul>
+        <a href="index.html#contact" class="btn btn-g btn-full">Book This Package</a>
+      </div>
+      <div class="pc sr">
+        <div class="pc-tier">Platinum</div>
+        <div class="pc-price"><span class="pc-curr">₹</span><span class="pc-amt">8,00,000</span><span style="font-size:1.4rem;color:var(--text-m);margin-top:6px">+</span></div>
+        <p class="pc-desc">Bespoke luxury for grand weddings, concerts & large events</p>
+        <ul class="pc-feats">
+          <li><i class="fas fa-check"></i> Unlimited Guests</li>
+          <li><i class="fas fa-check"></i> Bespoke Luxury Décor</li>
+          <li><i class="fas fa-check"></i> Dedicated Team (5+)</li>
+          <li><i class="fas fa-check"></i> Cinematic AV Production</li>
+          <li><i class="fas fa-check"></i> Full Media Coverage</li>
+          <li><i class="fas fa-check"></i> Celebrity DJ / Artist</li>
+          <li><i class="fas fa-check"></i> Fireworks & Cold Sparklers</li>
+          <li><i class="fas fa-check"></i> Drone Light Show</li>
+        </ul>
+        <a href="index.html#contact" class="btn btn-o btn-full">Enquire Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sh">
+      <span class="sh-eye">Questions</span>
+      <h2 class="sh-title">Frequently <em>Asked</em></h2>
+    </div>
+    <div class="faq-grid" id="faqGrid">
+      <div>
+        <div class="faq-item"><div class="faq-q">How far in advance should I book?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">We recommend booking at least 6–12 months in advance for weddings and large-scale concerts. For smaller events like birthdays and corporate functions, 2–3 months notice is usually sufficient.</div></div>
+        <div class="faq-item"><div class="faq-q">Do you handle destination weddings?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">Absolutely. We have planned weddings across Udaipur, Goa, Jaipur, Kerala and internationally in Dubai and Thailand. Our team handles all local vendor coordination and logistics.</div></div>
+        <div class="faq-item"><div class="faq-q">What is included in your packages?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">All packages include a dedicated event director, on-site coordination, vendor management and post-event support. Specific inclusions vary by tier — please see the pricing section above.</div></div>
+        <div class="faq-item"><div class="faq-q">Can I customise a package?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">Yes — every engagement is tailored to your exact needs. We can build a fully bespoke package from scratch or modify any of our existing tiers to suit your budget and vision.</div></div>
+      </div>
+      <div>
+        <div class="faq-item"><div class="faq-q">Do you work outside Delhi NCR?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">Yes. We have delivered events across Mumbai, Bengaluru, Chennai, Hyderabad, Jaipur, Udaipur, Goa and multiple international destinations. Travel and accommodation for our team is factored into your quote.</div></div>
+        <div class="faq-item"><div class="faq-q">What is your payment structure?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">We typically take a 30% booking deposit, 40% at 30 days before the event, and the final 30% on the day of the event. Flexible payment plans are available for large events.</div></div>
+        <div class="faq-item"><div class="faq-q">Do you provide catering?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">Yes, catering is available as an add-on through our curated partner caterers. We offer everything from traditional Indian thalis to international fine dining and live cooking stations.</div></div>
+        <div class="faq-item"><div class="faq-q">How do I get started?<div class="faq-icon"><i class="fas fa-plus"></i></div></div><div class="faq-a">Simply fill out our contact form or call us. A senior event director will reach out within 4 hours to schedule a discovery call and begin crafting your vision.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="cta-inner">
+    <div class="cta-text">
+      <h2>Ready to Create Something <em>Extraordinary?</em></h2>
+      <p>Get in touch today and a dedicated event director will reach out within 4 hours to begin crafting your vision into reality.</p>
+    </div>
+    <div class="cta-btns">
+      <a href="index.html#contact" class="btn btn-g">Book a Consultation <i class="fas fa-arrow-right"></i></a>
+      <a href="gallery.html" class="btn btn-o">View Our Portfolio</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fc">
+    <div class="fl">LUMIÈRE EVENTS</div>
+    <p>© 2025 Lumière Events. All Rights Reserved. Noida, India.</p>
+    <div class="soc">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+
+<button class="btt" id="btt" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+/* === CURSOR === */
+const dot=document.querySelector('.c-dot'),ring=document.querySelector('.c-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop);})();
+document.querySelectorAll('a,button,.svc-card,.add-card,.faq-q').forEach(el=>{
+  el.addEventListener('mouseenter',()=>ring.classList.add('hov'));
+  el.addEventListener('mouseleave',()=>ring.classList.remove('hov'));
+});
+
+/* === PARTICLES === */
+const canvas=document.getElementById('pc'),ctx=canvas.getContext('2d');
+function resize(){canvas.width=innerWidth;canvas.height=innerHeight;}resize();addEventListener('resize',resize);
+const pts=Array.from({length:65},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.5+.3,a:Math.random()*.4+.1}));
+const pal=['rgba(201,168,76,','rgba(123,47,247,','rgba(232,108,44,'];
+pts.forEach(p=>{p.c=pal[Math.floor(Math.random()*pal.length)]+p.a+')';});
+(function draw(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let i=0;i<pts.length;i++){for(let j=i+1;j<pts.length;j++){const dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<100){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle=`rgba(201,168,76,${.035*(1-d/100)})`;ctx.lineWidth=.5;ctx.stroke();}}}
+  pts.forEach(p=>{p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>canvas.width)p.vx*=-1;if(p.y<0||p.y>canvas.height)p.vy*=-1;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle=p.c;ctx.fill();});
+  requestAnimationFrame(draw);
+})();
+
+/* === SCROLL PROGRESS === */
+const sp=document.getElementById('sp');
+addEventListener('scroll',()=>{const s=scrollY,h=document.documentElement.scrollHeight-innerHeight;sp.style.width=(h>0?s/h*100:0)+'%';},{passive:true});
+
+/* === NAVBAR === */
+const navEl=document.getElementById('nav'),hbg=document.getElementById('hbg'),navLinks=document.getElementById('navLinks');
+addEventListener('scroll',()=>navEl.classList.toggle('sc',scrollY>60),{passive:true});
+hbg.addEventListener('click',()=>{hbg.classList.toggle('open');navLinks.classList.toggle('open');});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hbg.classList.remove('open');navLinks.classList.remove('open');}));
+
+/* === BACK TOP === */
+const btt=document.getElementById('btt');
+addEventListener('scroll',()=>btt.classList.toggle('show',scrollY>500),{passive:true});
+btt.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+
+/* === SERVICE FILTER === */
+document.querySelectorAll('.svc-pill').forEach(pill=>{
+  pill.addEventListener('click',()=>{
+    document.querySelectorAll('.svc-pill').forEach(p=>p.classList.remove('active'));
+    pill.classList.add('active');
+    const f=pill.dataset.filter;
+    document.querySelectorAll('.svc-card').forEach(card=>{
+      const show=f==='all'||card.dataset.svc===f;
+      card.style.transition='opacity .35s ease,transform .35s ease';
+      card.style.opacity=show?'1':'0.15';
+      card.style.transform=show?'':'scale(.97)';
+    });
+  });
+});
+
+/* === FAQ === */
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    const isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!isOpen)item.classList.add('open');
+  });
+});
+
+/* === 3D TILT ON SERVICE CARDS === */
+document.querySelectorAll('.svc-card').forEach(card=>{
+  card.addEventListener('mousemove',e=>{
+    const r=card.getBoundingClientRect();
+    const cx=r.left+r.width/2,cy=r.top+r.height/2;
+    const rx2=((e.clientY-cy)/(r.height/2))*-4;
+    const ry2=((e.clientX-cx)/(r.width/2))*4;
+    card.style.transform=`perspective(1000px) rotateX(${rx2}deg) rotateY(${ry2}deg) translateY(-8px)`;
+  });
+  card.addEventListener('mouseleave',()=>{card.style.transform='';card.style.transition='transform .5s ease';});
+});
+
+/* === SCROLL REVEAL === */
+const obs=new IntersectionObserver(ents=>{ents.forEach(e=>{if(e.isIntersecting){const sibs=[...e.target.parentElement.children];const i=sibs.indexOf(e.target);setTimeout(()=>e.target.classList.add('vis'),i*80);obs.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+document.querySelectorAll('.sr').forEach(el=>obs.observe(el));
+
+/* === SMOOTH ANCHORS === */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();scrollTo({top:t.offsetTop-80,behavior:'smooth'});}});});
+</script>
+</body>
+</html>

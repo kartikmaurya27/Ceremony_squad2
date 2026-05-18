@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumière Events – Premium luxury event planning for weddings, DJ nights, corporate events, concerts & more in India." />
+  <meta name="keywords" content="luxury event planner, wedding planner, DJ night, corporate events, concert management, Noida" />
+  <title>Ceremony squad | Creating Unforgettable Moments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Ceremony squad</span></div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+      <p class="preloader-text">Crafting Your Experience...</p>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-main">LUMIÈRE</span>
+        <span class="logo-sub">EVENTS</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#upcoming" class="nav-link">Events</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-shapes">
+        <div class="hs hs1"></div>
+        <div class="hs hs2"></div>
+        <div class="hs hs3"></div>
+      </div>
+      <!-- Animated event imagery using CSS -->
+      <div class="hero-visual">
+        <div class="hv-ring hv-ring1"></div>
+        <div class="hv-ring hv-ring2"></div>
+        <div class="hv-ring hv-ring3"></div>
+        <div class="hv-orb"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">— Premier Event Studio —</p>
+      <h1 class="hero-title">
+        <span class="ht-line reveal-up delay-1">Creating</span>
+        <span class="ht-line ht-gold reveal-up delay-2">Unforgettable</span>
+        <span class="ht-line reveal-up delay-3">Events</span>
+      </h1>
+      <p class="hero-tagline reveal-up delay-4">
+        Weddings · DJ Nights · Birthdays · Concerts · Corporate Galas
+      </p>
+      <div class="hero-actions reveal-up delay-5">
+        <a href="#contact" class="btn btn-gold">Book Now <i class="fas fa-arrow-right"></i></a>
+        <a href="#services" class="btn btn-outline">Explore Events</a>
+      </div>
+      <div class="hero-scroll-cue">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-ticker">
+      <div class="ticker-inner">
+        <span>Weddings</span><span class="sep">✦</span>
+        <span>DJ Nights</span><span class="sep">✦</span>
+        <span>Concerts</span><span class="sep">✦</span>
+        <span>Corporate Events</span><span class="sep">✦</span>
+        <span>Birthdays</span><span class="sep">✦</span>
+        <span>Destination Events</span><span class="sep">✦</span>
+        <span>Weddings</span><span class="sep">✦</span>
+        <span>DJ Nights</span><span class="sep">✦</span>
+        <span>Concerts</span><span class="sep">✦</span>
+        <span>Corporate Events</span><span class="sep">✦</span>
+        <span>Birthdays</span><span class="sep">✦</span>
+        <span>Destination Events</span><span class="sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="av-frame">
+            <div class="av-img av-img1">
+              <div class="av-placeholder ap1" style="background-image: url('img/wed.jpg')">
+                <i class="fas fa-star"></i>
+                <span style="color: black;">Since 2009</span>
+              </div>
+            </div>
+            <div class="av-img av-img2">
+              <div class="av-placeholder ap2" >
+                <i class="fas fa-gem"></i>
+                <span>Luxury</span>
+              </div>
+            </div>
+            <div class="av-badge">
+              <div class="avb-inner">
+                <strong>15+</strong>
+                <span>Years<br>Excellence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">We Don't Plan Events.<br><em>We Craft Legacies.</em></h2>
+          <p class="about-desc">
+            Founded in the heart of Noida, Lumière Events has been redefining celebration culture across India for over fifteen years. From intimate candlelit weddings to stadium-scale concerts, our team of visionary curators transforms every brief into a breathtaking experience.
+          </p>
+          <p class="about-desc">
+            We blend cinematic aesthetics with flawless execution — because every moment you'll remember deserves to be designed with obsessive care.
+          </p>
+          <div class="about-pills">
+            <div class="pill"><i class="fas fa-check-circle"></i> Award-Winning Team</div>
+            <div class="pill"><i class="fas fa-check-circle"></i> Pan-India Network</div>
+            <div class="pill"><i class="fas fa-check-circle"></i> 2000+ Events Delivered</div>
+            <div class="pill"><i class="fas fa-check-circle"></i> 24/7 Concierge Support</div>
+          </div>
+          <a href="#contact" class="btn btn-gold mt-2">Start Your Journey <i class="fas fa-arrow-right"></i></a>
+          <a href="about.html" class="btn btn-outline">More About</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="services section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="section-title">Our <em>Signature</em> Services</h2>
+        <p class="section-sub">Every service category is led by specialists who live and breathe their craft.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card sc-wide">
+          <div class="sc-icon"><i class="fas fa-rings-wedding"></i></div>
+          <div class="sc-tag">Signature</div>
+          <h3>Wedding Planning</h3>
+          <p>From mehendi to reception — every ritual crafted to perfection with Mughal grandeur or modern minimalism.</p>
+          <a href="#contact" class="sc-link">Enquire <i class="fas fa-arrow-right"></i></a>
+          <div class="sc-glow"></div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon"><i class="fas fa-music"></i></div>
+          <h3>DJ Nights</h3>
+          <p>World-class sound systems, lighting rigs and headline DJs for electrifying nights that never end.</p>
+          <a href="#contact" class="sc-link">Enquire <i class="fas fa-arrow-right"></i></a>
+          <div class="sc-glow sc-glow-purple"></div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon"><i class="fas fa-cake-candles"></i></div>
+          <h3>Birthday Events</h3>
+          <p>Bespoke themes, floral arches, custom cakes and surprise activations for every age and milestone.</p>
+          <a href="#contact" class="sc-link">Enquire <i class="fas fa-arrow-right"></i></a>
+          <div class="sc-glow sc-glow-orange"></div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon"><i class="fas fa-briefcase"></i></div>
+          <h3>Corporate Events</h3>
+          <p>Conferences, product launches, award nights and team outings — executed with boardroom precision.</p>
+          <a href="#contact" class="sc-link">Enquire <i class="fas fa-arrow-right"></i></a>
+          <div class="sc-glow"></div>
+        </div>
+
+        <div class="service-card">
+          <div class="sc-icon"><i class="fas fa-microphone-lines"></i></div>
+          <h3>Concert Management</h3>
+          <p>Full-scale live production: stage design, artist logistics, ticketing, crowd management and broadcast.</p>
+          <a href="#contact" class="sc-link">Enquire <i class="fas fa-arrow-right"></i></a>
+          <div class="sc-glow sc-glow-purple"></div>
+        </div>
+
+        <div class="service-card sc-wide">
+          <div class="sc-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <div class="sc-tag">Popular</div>
+          <h3>Decoration Services</h3>
+          <p>Floral installations, fabric draping, LED canopies, thematic décor and bespoke centrepieces that steal every frame.</p>
+          <a href="#contact" class="sc-link">Enquire <i class="fas fa-arrow-right"></i></a>
+          <div class="sc-glow sc-glow-orange"></div>
+        </div>
+
+      </div>
+      <a href="services.html" class="btn btn-gold mt-2">More Services <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="gallery section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-title">Moments We've <em>Made</em></h2>
+      </div>
+      <div class="gallery-filter">
+        <button class="gf-btn active" data-filter="all">All</button>
+        <button class="gf-btn" data-filter="wedding">Weddings</button>
+        <button class="gf-btn" data-filter="dj">DJ Nights</button>
+        <button class="gf-btn" data-filter="corporate">Corporate</button>
+        <button class="gf-btn" data-filter="decor">Décor</button>
+        <a href="gallery.html" class="gf-btn">More</a>
+      </div>
+      <div class="gallery-masonry">
+        <div class="gm-item tall" data-cat="wedding">
+          <div class="gmi-inner gmi-c1" style="background-image: url('img/mehndi.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">Wedding</p>
+              <h4>Royal Mehendi Night</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item" data-cat="dj">
+          <div class="gmi-inner gmi-c2" style="background-image: url('img/neon.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">DJ Night</p>
+              <h4>Neon Wonderland</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item" data-cat="corporate">
+          <div class="gmi-inner gmi-c3" style="background-image: url('img/corporate.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">Corporate</p>
+              <h4>Annual Gala 2024</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item tall" data-cat="decor">
+          <div class="gmi-inner gmi-c4" style="background-image: url('img/wed.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">Décor</p>
+              <h4>Floral Arch Dream</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item wide" data-cat="wedding">
+          <div class="gmi-inner gmi-c5" style="background-image: url('img/baraat.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">Wedding</p>
+              <h4>Palace Baraat</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item" data-cat="dj">
+          <div class="gmi-inner gmi-c6" style="background-image: url('img/dj.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">DJ Night</p>
+              <h4>Ultraviolet Rave</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item" data-cat="corporate">
+          <div class="gmi-inner gmi-c7" style="background-image: url('img/corporate.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">Corporate</p>
+              <h4>Product Launch</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item tall" data-cat="wedding">
+          <div class="gmi-inner gmi-c8" style="background-image: url('img/candil.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">Wedding</p>
+              <h4>Candlelit Reception</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gm-item" data-cat="decor">
+          <div class="gmi-inner gmi-c9" style="background-image: url('img/canop.jpg'); background-size: cover; background-position: center;">
+            <div class="gmi-overlay">
+              <p class="gmi-cat">Décor</p>
+              <h4>LED Canopy Night</h4>
+              <i class="fas fa-expand-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats section section-dark">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num" data-target="2400">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Events Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="15">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="98">0</div>
+          <div class="stat-plus">%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="50">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Expert Team Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="120">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">Vendor Partners</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Voices</p>
+        <h2 class="section-title">What Our <em>Clients Say</em></h2>
+      </div>
+      <div class="testi-carousel">
+        <div class="testi-track" id="testi-track">
+
+          <div class="testi-card">
+            <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="tc-text">"Lumière transformed our wedding into an absolute fairytale. The attention to every single detail — from the petal arrangement to the lighting cues — was extraordinary. Our guests still talk about it."</p>
+            <div class="tc-author">
+              <div class="tc-avatar ta1"></div>
+              <div>
+                <strong>Priya & Arjun Mehta</strong>
+                <span>Wedding · Delhi NCR</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="tc-text">"Our annual corporate gala was the best we've ever hosted. The team's professionalism, creativity and seamless execution made us look like the most prestigious company in the room."</p>
+            <div class="tc-author">
+              <div class="tc-avatar ta2"></div>
+              <div>
+                <strong>Rohit Sharma</strong>
+                <span>Corporate Gala · Noida</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card" width="100%">
+            <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="tc-text">"The DJ Night they organised for our college fest was legendary. The production quality, the artist lineup, the crowd energy — everything was beyond expectations. Absolutely 10 out of 10!"</p>
+            <div class="tc-author">
+              <div class="tc-avatar ta3"></div>
+              <div>
+                <strong>Ananya Kapoor</strong>
+                <span>DJ Night · Gurugram</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p class="tc-text">"My daughter's quinceañera-style sweet sixteen was breathtaking. The floral installations, the décor and the surprise fireworks had everyone in tears of joy. Truly magical people."</p>
+            <div class="tc-author">
+              <div class="tc-avatar ta4"></div>
+              <div>
+                <strong>Sunita Verma</strong>
+                <span>Birthday Event · Greater Noida</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="testi-controls">
+          <button class="tc-btn" id="tprev"><i class="fas fa-chevron-left"></i></button>
+          <div class="tc-dots" id="tc-dots"></div>
+          <button class="tc-btn" id="tnext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== UPCOMING EVENTS ===== -->
+  <section id="upcoming" class="upcoming section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Calendar</p>
+        <h2 class="section-title">Upcoming <em>Events</em></h2>
+      </div>
+      <div class="events-list">
+
+        <div class="event-item">
+          <div class="ei-date">
+            <strong>28</strong><span>Jun</span><em>2025</em>
+          </div>
+          <div class="ei-info">
+            <div class="ei-badge" style="--badge-clr: var(--gold)">Wedding Showcase</div>
+            <h3>Grand Bridal Expo — Delhi</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Pragati Maidan, New Delhi &nbsp;|&nbsp; <i class="fas fa-clock"></i> 10:00 AM – 8:00 PM</p>
+          </div>
+          <a href="#contact" class="btn btn-outline btn-sm">Register</a>
+        </div>
+
+        <div class="event-item">
+          <div class="ei-date">
+            <strong>05</strong><span>Jul</span><em>2025</em>
+          </div>
+          <div class="ei-info">
+            <div class="ei-badge" style="--badge-clr: var(--purple)">DJ Night</div>
+            <h3>Neon Circus — Open Air Rave</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Sector 18, Noida &nbsp;|&nbsp; <i class="fas fa-clock"></i> 8:00 PM – 3:00 AM</p>
+          </div>
+          <a href="#contact" class="btn btn-outline btn-sm">Register</a>
+        </div>
+
+        <div class="event-item">
+          <div class="ei-date">
+            <strong>12</strong><span>Jul</span><em>2025</em>
+          </div>
+          <div class="ei-info">
+            <div class="ei-badge" style="--badge-clr: var(--orange)">Concert</div>
+            <h3>Monsoon Music Festival</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Buddh International Circuit, Greater Noida &nbsp;|&nbsp; <i class="fas fa-clock"></i> 5:00 PM – 12:00 AM</p>
+          </div>
+          <a href="#contact" class="btn btn-outline btn-sm">Register</a>
+        </div>
+
+        <div class="event-item">
+          <div class="ei-date">
+            <strong>20</strong><span>Jul</span><em>2025</em>
+          </div>
+          <div class="ei-info">
+            <div class="ei-badge" style="--badge-clr: var(--gold)">Corporate</div>
+            <h3>Leadership Summit 2025</h3>
+            <p><i class="fas fa-map-marker-alt"></i> The Leela, Gurugram &nbsp;|&nbsp; <i class="fas fa-clock"></i> 9:00 AM – 6:00 PM</p>
+          </div>
+          <a href="#contact" class="btn btn-outline btn-sm">Register</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section id="pricing" class="pricing section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Packages</p>
+        <h2 class="section-title">Simple, <em>Transparent</em> Pricing</h2>
+        <p class="section-sub">All packages include a dedicated event manager, on-site coordination and post-event support.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="price-card">
+          <div class="pc-header">
+            <p class="pc-tier">Silver</p>
+            <div class="pc-price">
+              <span class="pc-curr">₹</span>
+              <span class="pc-amt">1,20,000</span>
+            </div>
+            <p class="pc-desc">Perfect for intimate gatherings & small celebrations</p>
+          </div>
+          <ul class="pc-features">
+            <li><i class="fas fa-check"></i> Up to 100 Guests</li>
+            <li><i class="fas fa-check"></i> Basic Décor Package</li>
+            <li><i class="fas fa-check"></i> 1 Event Coordinator</li>
+            <li><i class="fas fa-check"></i> Sound System (4 hrs)</li>
+            <li><i class="fas fa-check"></i> Photography (4 hrs)</li>
+            <li class="disabled"><i class="fas fa-times"></i> Live DJ</li>
+            <li class="disabled"><i class="fas fa-times"></i> Floral Installations</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline w-full">Get Started</a>
+        </div>
+
+        <div class="price-card pc-featured">
+          <div class="pc-badge">Most Popular</div>
+          <div class="pc-header">
+            <p class="pc-tier">Gold</p>
+            <div class="pc-price">
+              <span class="pc-curr">₹</span>
+              <span class="pc-amt">3,50,000</span>
+            </div>
+            <p class="pc-desc">Ideal for weddings & signature celebrations</p>
+          </div>
+          <ul class="pc-features">
+            <li><i class="fas fa-check"></i> Up to 400 Guests</li>
+            <li><i class="fas fa-check"></i> Premium Décor Package</li>
+            <li><i class="fas fa-check"></i> 2 Event Coordinators</li>
+            <li><i class="fas fa-check"></i> Pro Sound & Light Rig</li>
+            <li><i class="fas fa-check"></i> Photo + Video (Full Day)</li>
+            <li><i class="fas fa-check"></i> Live DJ (6 hrs)</li>
+            <li><i class="fas fa-check"></i> Floral Installations</li>
+          </ul>
+          <a href="#contact" class="btn btn-gold w-full">Book This Package</a>
+        </div>
+
+        <div class="price-card">
+          <div class="pc-header">
+            <p class="pc-tier">Platinum</p>
+            <div class="pc-price">
+              <span class="pc-curr">₹</span>
+              <span class="pc-amt">8,00,000</span>
+              <span class="pc-note">+</span>
+            </div>
+            <p class="pc-desc">Bespoke luxury for grand weddings & concerts</p>
+          </div>
+          <ul class="pc-features">
+            <li><i class="fas fa-check"></i> Unlimited Guests</li>
+            <li><i class="fas fa-check"></i> Bespoke Luxury Décor</li>
+            <li><i class="fas fa-check"></i> Dedicated Team (5+)</li>
+            <li><i class="fas fa-check"></i> Cinematic AV Production</li>
+            <li><i class="fas fa-check"></i> Full Media Coverage</li>
+            <li><i class="fas fa-check"></i> Celebrity DJ / Artist</li>
+            <li><i class="fas fa-check"></i> Fireworks & Drone Show</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline w-full">Enquire Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Let's Talk</p>
+        <h2 class="section-title">Start Your <em>Story</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="cf-row">
+              <div class="cf-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="cf-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 00000 00000" required />
+              </div>
+            </div>
+            <div class="cf-row">
+              <div class="cf-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="you@email.com" required />
+              </div>
+              <div class="cf-group">
+                <label>Event Type</label>
+                <select>
+                  <option value="">Select Service</option>
+                  <option>Wedding Planning</option>
+                  <option>DJ Night</option>
+                  <option>Birthday Event</option>
+                  <option>Corporate Event</option>
+                  <option>Concert</option>
+                  <option>Decoration Only</option>
+                </select>
+              </div>
+            </div>
+            <div class="cf-row">
+              <div class="cf-group">
+              <label>Event Date</label>
+              <input type="date" />
+            </div>
+            <div class="cf-group">
+                <label>Guests</label>
+                <select>
+                  <option value="">Select Number of Guests</option>
+                  <option>50 - 100</option>
+                  <option>100 - 200</option>
+                  <option>200 - 300</option>
+                  <option>300 - 400</option>
+                  <option>400 - 500</option>
+                  <option>500+</option>
+                </select>
+              </div>
+            </div>
+            <div class="cf-group">
+              <label>Tell Us About Your Dream Event</label>
+              <textarea rows="4" placeholder="Describe your vision..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold w-full">Send Enquiry <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Our Studio</strong>
+              <p>Sector 63, Noida, Uttar Pradesh — 201301</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Call Us</strong>
+              <p>+91 77548 30127</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <p>kartikmaueya27012006@gmail.com</p>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Working Hours</strong>
+              <p>Mon–Sat: 9 AM – 8 PM</p>
+            </div>
+          </div>
+          <!-- Embedded Map Mockup (dark style) -->
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.9!2d77.37!3d28.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5d!2sNoida+Sector+63!5e0!3m2!1sen!2sin!4v1"
+              width="100%"
+              height="220"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lumière Events Location">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <div class="footer-logo">Ceremony <span>squad</span></div>
+            <p>Crafting extraordinary experiences across India since 2009. Your vision, our obsession.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Wedding Planning</a></li>
+              <li><a href="#services">DJ Nights</a></li>
+              <li><a href="#services">Birthday Events</a></li>
+              <li><a href="#services">Corporate Events</a></li>
+              <li><a href="#services">Concert Management</a></li>
+              <li><a href="#services">Decoration Services</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#upcoming">Upcoming Events</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Get exclusive event previews, deals & inspiration straight to your inbox.</p>
+            <div class="nl-form">
+              <input type="email" placeholder="Your email address" />
+              <button class="btn btn-gold">Subscribe</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Ceremony squad. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color:var(--gold)"></i> in Noida</p>
+        <div class="fb-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-backdrop"></div>
+    <div class="lb-content">
+      <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+      <div class="lb-img" id="lbImg"></div>
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

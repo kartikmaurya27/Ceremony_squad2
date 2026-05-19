@@ -127,7 +127,7 @@
 
     .ph-content {
       position: relative; z-index: 2;
-      max-width: 1320px; margin: 0 auto; padding: 0 48px;
+      max-width: 1320px; margin: 0 auto; padding: 5px;
     }
     .ph-eyebrow {
       font-size: .7rem; letter-spacing: .45em; text-transform: uppercase;

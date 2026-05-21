@@ -53,7 +53,7 @@
     .hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
     /* ─── HERO ─── */
-    .ph{min-height:80vh;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;padding-bottom:80px;}
+    .ph{min-height:80vh;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;padding-top:80px;}
     .ph-bg{position:absolute;inset:0;background:radial-gradient(ellipse 90% 70% at 50% 20%,rgba(201,168,76,.1) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 10% 90%,rgba(123,47,247,.1) 0%,transparent 50%),radial-gradient(ellipse 50% 50% at 90% 60%,rgba(232,108,44,.08) 0%,transparent 50%),var(--bg);}
     .ph-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(9,9,11,.2) 0%,rgba(9,9,11,.65) 60%,var(--bg) 100%);}
 

@@ -225,24 +225,24 @@
     .g-item:hover .g-inner { transform: scale(1.03); }
 
     /* Gradient art placeholders — rich cinematic compositions */
-    .gc1  { background-image: url('img/wed.jpg'); background-size: cover; }
-    .gc2  { background-image: url('img/dj2.png'); background-size: cover; }
-    .gc3  { background-image: url('img/mehndi2.jpg'); background-size: cover; }
-    .gc4  { background-image: url('img/baraat2.webp'); background-size: cover; }
-    .gc5  { background-image: url('img/wed.jpg'); background-size: cover; }
-    .gc6  { background-image: url('img/neon.jpg'); background-size: cover; }
-    .gc7  { background-image: url('img/dj2.png'); background-size: cover; }
-    .gc8  { background-image: url('img/corp2.jpg'); background-size: cover; }
-    .gc9  { background-image: url('img/canop2.jpg'); background-size: cover; }
-    .gc10 { background-image: url('img/candil.jpg'); background-size: cover; }
-    .gc11 { background-image: url('img/baraat2.webp'); background-size: cover; }
-    .gc12 { background-image: url('img/wed.jpg'); background-size: cover; }
-    .gc13 { background-image: url('img/mehndi2.jpg'); background-size: cover; }
-    .gc14 { background-image: url('img/dj2.png'); background-size: cover; }
-    .gc15 { background-image: url('img/neon.jpg'); background-size: cover; }
-    .gc16 { background-image: url('img/corp2.jpg'); background-size: cover; }
-    .gc17 { background-image: url('img/canop2.jpg'); background-size: cover; }
-    .gc18 { background-image: url('img/dj2.png'); background-size: cover; }
+    .gc1  { background-image: url('wed.jpg'); background-size: cover; }
+    .gc2  { background-image: url('dj2.png'); background-size: cover; }
+    .gc3  { background-image: url('mehndi2.jpg'); background-size: cover; }
+    .gc4  { background-image: url('baraat2.webp'); background-size: cover; }
+    .gc5  { background-image: url('wed.jpg'); background-size: cover; }
+    .gc6  { background-image: url('neon.jpg'); background-size: cover; }
+    .gc7  { background-image: url('dj2.png'); background-size: cover; }
+    .gc8  { background-image: url('corp2.jpg'); background-size: cover; }
+    .gc9  { background-image: url('canop2.jpg'); background-size: cover; }
+    .gc10 { background-image: url('candil.jpg'); background-size: cover; }
+    .gc11 { background-image: url('baraat2.webp'); background-size: cover; }
+    .gc12 { background-image: url('wed.jpg'); background-size: cover; }
+    .gc13 { background-image: url('mehndi2.jpg'); background-size: cover; }
+    .gc14 { background-image: url('dj2.png'); background-size: cover; }
+    .gc15 { background-image: url('neon.jpg'); background-size: cover; }
+    .gc16 { background-image: url('corp2.jpg'); background-size: cover; }
+    .gc17 { background-image: url('canop2.jpg'); background-size: cover; }
+    .gc18 { background-image: url('dj2.png'); background-size: cover; }
 
     /* Shimmer overlay on each card */
     .g-inner::before {
